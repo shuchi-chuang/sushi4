@@ -1,0 +1,427 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+}
+
+htnl, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+}
+
+.container.d-block img {
+  margin: 15px 0px 15px 0px;
+}
+
+.collapse.navbar-collapse.justify-content-center ul.navbar-nav.mx-auto li.nav-item {
+  margin: 0px 20px;
+}
+
+.custom-red {
+  background-color: #AD4425 !important;
+}
+.custom-red .nav-link {
+  color: white;
+}
+.custom-red .nav-link:hover, .custom-red .nav-link.active {
+  color: #40220F !important;
+}
+
+#navbarMenu {
+  text-align: center;
+}
+#navbarMenu label {
+  display: block;
+  width: 100%;
+  position: relative;
+  aspect-ratio: 16/9;
+  cursor: pointer;
+  margin-top: 200px;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-toggler {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: white;
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+}
+header.jumbotron {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  margin-top: 180px;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+.image-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+}
+.image-container img.image2 {
+  opacity: 0;
+}
+
+#toggle:checked + label .image1 {
+  opacity: 0;
+}
+
+#toggle:checked + label .image2 {
+  opacity: 1;
+}
+
+section {
+  padding: 50px 0px;
+  scroll-margin-top: 186px;
+}
+
+section#section_menu {
+  position: relative;
+  z-index: 2;
+  padding: 30px 0px 150px 0px;
+  background-image: url("https://raw.githubusercontent.com/shuchi-chuang/my-site/064f74720b6a8c08c47a55142f8f9d45cfcb1351/sushi網頁18.png");
+  height: auto;
+  background-size: cover;
+  scroll-margin-top: 186px;
+  text-align: center;
+}
+section#section_menu .col-sm-12 {
+  font-size: 50px;
+  padding: 30px 0px 0px 0px;
+}
+section#section_menu .line {
+  max-width: 50px;
+  border: solid 2px #AD4425;
+  margin: auto;
+  margin-bottom: 50px;
+}
+section#section_menu .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 0px;
+  bottom: 0px;
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#section_menu .row .img-wrapper {
+  position: relative;
+  width: 200px;
+  height: auto;
+}
+section#section_menu .row .img-wrapper img {
+  width: 100%;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+section#section_menu .row .img-wrapper img.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+section#section_menu .row .img-wrapper:hover img.default {
+  opacity: 0;
+}
+section#section_menu .row .img-wrapper:hover img.hover {
+  opacity: 1;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 20px;
+}
+.container h5 {
+  color: #40220F;
+}
+
+.carousel-wrapper {
+  width: 960px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 7px;
+}
+.carousel-item .img-wrapper {
+  position: relative;
+  width: 200px;
+  height: auto;
+}
+.carousel-item .img-wrapper img {
+  width: 100%;
+  transition: opacity 0.3s ease;
+  position: relative;
+}
+.carousel-item .img-wrapper img.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.carousel-item:hover img.default {
+  opacity: 0;
+}
+.carousel-item:hover img.hover {
+  opacity: 1;
+}
+
+.btn-prev,
+.btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btn-prev {
+  left: 0px;
+}
+
+.btn-next {
+  right: 0px;
+}
+
+.btn-next, .btn-prev {
+  color: #40220F;
+  font-size: 30px;
+  background: none;
+  cursor: pointer;
+  top: 90px;
+  transform: scaleY(2);
+}
+.btn-next:hover, .btn-prev:hover {
+  color: #AD4425;
+}
+
+.classbox {
+  width: 260px;
+  border-radius: 5px;
+  background-color: white;
+  color: #4F4C4B;
+  cursor: pointer;
+  display: inline-block;
+  margin: 30px 30px;
+  position: relative;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+.classbox:hover .bookbtn {
+  bottom: 10px;
+}
+.classbox:hover .classpicture {
+  transform: scale(1.13);
+}
+.classbox:hover .bottom .valuebar {
+  width: 250px;
+}
+
+.top {
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+}
+.top .tag {
+  width: 100%;
+  text-align: center;
+  transform: translateX(95px) translateY(15px) rotate(45deg);
+  padding: 5px 0px;
+  background-color: #F39800;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+.top .classpicture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("https://hahow.in/images/574fab4f206cd60900c52a67?width=300");
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 0;
+  border-radius: 5px 5px 0px 0px;
+  transition: 0.3s;
+}
+.top .bookbtn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  bottom: -50px;
+  background-color: white;
+  color: #AD4425;
+  cursor: pointer;
+  transition: bottom 0.3s;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+.top .bookbtn i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+}
+.top .bookbtn:hover {
+  background-color: #AD4425;
+  color: white;
+}
+
+.bottom {
+  height: 184px;
+  padding: 15px;
+  color: #40220F;
+}
+.bottom .classtitle {
+  font-size: 25px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.bottom .texts {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: right;
+}
+.bottom .texts .orange {
+  padding-left: 5px;
+  color: #AD4425;
+}
+.bottom .pricerow {
+  margin-bottom: 8px;
+}
+.bottom .pricerow .lastday {
+  margin-top: 60px;
+}
+.bottom .orangebar {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #AD4425;
+  border-radius: 0px 0px 5px 5px;
+}
+
+#app {
+  max-width: 965px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  scroll-margin-top: 186px;
+}
+#app .col-sm-12 {
+  font-size: 50px;
+  padding: 10px 0px 0px 0px;
+  text-align: center;
+}
+#app .line {
+  max-width: 50px;
+  border: solid 2px #AD4425;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+footer.jumbotron {
+  background-image: url("https://raw.githubusercontent.com/shuchi-chuang/my-site/064f74720b6a8c08c47a55142f8f9d45cfcb1351/sushi網頁18.png");
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+  color: #40220F;
+}
+footer.jumbotron input {
+  background-color: transparent;
+  border: solid 1px #40220F;
+  max-width: 350px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer.jumbotron .container {
+  padding: 60px 0px;
+}
+footer.jumbotron .line {
+  max-width: 50px;
+  border: solid 2px #AD4425;
+  margin: auto;
+  margin-bottom: 30px;
+}
+footer.jumbotron .col-sm-12 {
+  font-size: 50px;
+  padding: 20px 0px 0px 0px;
+}
+footer.jumbotron a {
+  font-size: 40px;
+  padding: 15px;
+  color: #40220F;
+  cursor: pointer;
+}
+footer.jumbotron button {
+  color: white;
+  background-color: #AD4425;
+  padding: 4px 10px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+footer.jumbotron button:hover {
+  color: #AD4425;
+  border: solid 1px #AD4425;
+}
+
+#final {
+  height: 70px;
+  background-color: #AD4425;
+  display: flex;
+  color: white;
+  padding: 25px 60px;
+  justify-content: center;
+}
+#final h5 {
+  font-weight: 350;
+  font-size: 17px;
+}
+#final h5.a {
+  margin-right: 180px;
+}
+#final h5.b {
+  cursor: pointer;
+}
