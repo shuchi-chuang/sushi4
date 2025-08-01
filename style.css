@@ -62,6 +62,7 @@ header.jumbotron {
 }
 
 .image-container {
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
@@ -394,6 +395,9 @@ footer.jumbotron a {
   padding: 15px;
   color: #40220F;
   cursor: pointer;
+}
+footer.jumbotron a:hover {
+  color: #AD4425;
 }
 footer.jumbotron button {
   color: white;
